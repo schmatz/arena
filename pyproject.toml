@@ -1,0 +1,77 @@
+[project]
+name = "arena"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.11"
+dependencies = [
+    "accelerate",
+    "ale-py",
+    "autorom[accept-rom-license]",
+    "circuitsvis",
+    "datasets",
+    "diffusers",
+    "eindex-callum",
+    "einops",
+    "frozendict",
+    "ftfy",
+    "gdown",
+    "gym==0.23.1",
+    "hdbscan",
+    "huggingface-hub",
+    "imageio-ffmpeg",
+    "ipykernel",
+    "ipywidgets==7.7.1",
+    "jaxtyping",
+    "jupyter",
+    "jupyterlab-widgets==1.1.1",
+    "matplotlib",
+    "mediapy",
+    "mujoco",
+    "neel-plotly",
+    "nnsight>=0.3.5",
+    "notebook",
+    "numpy-stl",
+    "openai==0.28",
+    "opencv-python",
+    "pandas",
+    "plotly",
+    "portalocker>=2.0.0",
+    "pre-commit",
+    "protobuf==3.20.3",
+    "pygame",
+    "pytest",
+    "requests",
+    "sae-dashboard",
+    "sae-lens==4.4.5",
+    "safetensors",
+    "scikit-learn",
+    "streamlit",
+    "streamlit-antd-components==0.2.5",
+    "streamlit-image-select",
+    "streamlit-on-hover-tabs",
+    "sympy",
+    "tabulate",
+    "tensorboard",
+    "tiktoken",
+    "torchinfo",
+    "torchtext",
+    "torchvision",
+    "tqdm",
+    "transformer-lens",
+    "typeguard",
+    "umap-learn",
+    "wandb==0.13.10",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+ignore = ["E722", "E731", "F722"]
+extend-select = ["I"]
+
+[tool.uv.sources]
+circuitsvis = { git = "https://github.com/callummcdougall/CircuitsVis.git", subdirectory = "python" }
+eindex-callum = { git = "https://github.com/callummcdougall/eindex.git" }
+neel-plotly = { git = "https://github.com/neelnanda-io/neel-plotly" }
